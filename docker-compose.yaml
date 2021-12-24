@@ -13,7 +13,7 @@ services:
     image: mayureshbanne4/hslave
     container_name: "slave1"
     depends_on:
-      - master
+      - hmaster
     ports:
       - "9901:9864"
       - "8041:8042"
@@ -21,7 +21,7 @@ services:
     image: mayureshbanne4/hslave
     container_name: "slave2"
     depends_on:
-      - master
+      - hmaster
     ports:
       - "9902:9864"
       - "8042:8042"
